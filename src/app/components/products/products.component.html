@@ -1,0 +1,7 @@
+<div class="autor-grid">
+    <app-autor 
+        *ngFor="let autor of autores; index as i" 
+        (autorClicked)="clickedAutor($event)" 
+        [autor]="autor">
+    </app-autor>
+</div>

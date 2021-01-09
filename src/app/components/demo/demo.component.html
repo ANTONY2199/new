@@ -1,0 +1,12 @@
+<input type="text" name="" id="" [(ngModel)]="title">
+{{title}}
+
+<hr>
+<input type="text" name="" id="" [(ngModel)]="numExp">
+{{numExp | exponential}}
+
+<hr>
+<button (click)="openItems(arrString.length)">Create Items</button>
+<ul>
+    <h2 style="color: red;" *ngIf="arrString.length === 0">La lista está vacía...</h2>
+</ul>

@@ -1,0 +1,6 @@
+<h3>{{ autor.nombre | uppercase }}</h3>
+<img class="img-autor" src="{{ autor.image }}" alt="">
+<strong>{{ autor.nacimiento }} - {{ autor.fallecimiento }} </strong>
+<p>{{ autor.descripcion | slice:0:300 }}</p>
+<button (click)="addSesto()"> Agregar al sesto </button>
+<button [routerLink]="['/products',autor.id]">Ver Detalles</button>
